@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.Sllitsupportdesk" parent="Theme.AppCompat.DayNight">
+        <!-- Your customizations here -->
+    </style>
+
+</resources>

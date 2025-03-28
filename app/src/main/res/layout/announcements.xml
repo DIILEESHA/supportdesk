@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Background Image -->
+
+    <!-- Overlay Image -->
+
+    <ImageView
+        android:id="@+id/backgroundImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/back" />
+    <!-- Skip Text -->
+    <TextView
+        android:id="@+id/skipText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Skip"
+        android:textSize="16sp"
+        android:textColor="#000"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="16dp"
+        android:clickable="true"
+        android:focusable="true" />
+
+    <!-- Overlay Image -->
+    <ImageView
+        android:id="@+id/overlayImage"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/skipText"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/announcement"
+        android:contentDescription="Illustration" />
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Announcements"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:layout_below="@id/overlayImage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+    <!-- Description -->
+
+    <!-- Bottom Curved Background -->
+
+    <TextView
+        android:id="@+id/descriptionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleText"
+        android:layout_marginTop="89dp"
+        android:layout_marginEnd="29dp"
+        android:gravity="center"
+        android:paddingTop="80dp"
+        android:paddingStart="100dp"
+
+        android:text="Categorize notices into Academic, Events, and General for clarity"
+        android:textColor="#F4F4F4"
+        android:textSize="16sp" />
+
+    <!-- Next Button -->
+
+
+
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="150dp"
+        android:layout_height="55dp"
+        android:text="Next"
+        android:backgroundTint="#FFCB00"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp" />
+
+</RelativeLayout>

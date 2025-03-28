@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="nextButton" type="id" />
+    <item name="titleText" type="id" />
+    <item name="descriptionText" type="id" />
+    <item name="overlayImage" type="id" />
+    <item name="skipText" type="id" />
+</resources>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary Colors -->
+    <color name="primary">#6200EE</color> <!-- Purple -->
+    <color name="primary_dark">#3700B3</color> <!-- Dark Purple -->
+    <color name="accent">#FFD600</color> <!-- Yellow -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="gray">#666666</color>
+    <color name="light_gray">#E0E0E0</color>
+
+    <!-- Backgrounds -->
+    <color name="background">#F5F5F5</color> <!-- Light gray -->
+    <color name="search_bar_background">#EEEEEE</color> <!-- Very light gray -->
+
+    <!-- Categories -->
+    <color name="category_selected">#FFC107</color> <!-- Yellow -->
+    <color name="category_unselected">#D9D9D9</color> <!-- Light Gray -->
+
+    <!-- Notices -->
+    <color name="important_notice_background">#FFEBEE</color> <!-- Light Red -->
+    <color name="important_notice_text">#D32F2F</color> <!-- Dark Red -->
+    <color name="recent_notices_bg">#F8F9FA</color> <!-- Light Grayish Background -->
+
+    <!-- Navbar -->
+    <color name="navbar_background">#1A237E</color> <!-- Dark Blue -->
+    <color name="navbar_icon_selected">#FFD600</color> <!-- Yellow -->
+    <color name="navbar_icon_unselected">#FFFFFF</color> <!-- White -->
+
+    <color name="academic_bg">#D6B4FC</color>
+    <color name="events_bg">#12D4C9</color>
+    <color name="general_bg">#FFB6C1</color>
+    <color name="text_primary">#000000</color>
+    <color name="card_bg">#E0E0E0</color>
+</resources>

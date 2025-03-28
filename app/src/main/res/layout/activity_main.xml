@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- Bottom Container with SLIIT Logo -->
+    <LinearLayout
+        android:id="@+id/bottomContainer"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_gravity="top"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="10dp"
+        android:background="@drawable/rounded_corners">
+
+        <!-- SLIIT Logo -->
+        <ImageView
+            android:id="@+id/sliitLogo"
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:src="@drawable/sliit_logo"
+            android:scaleType="fitCenter"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"/>
+    </LinearLayout>
+
+    <!-- Foreground Content -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_marginTop="150dp"
+        >
+
+        <!-- 🔍 Search Bar -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <SearchView
+                android:id="@+id/searchBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:queryHint="Search notices..."
+                android:iconifiedByDefault="false"
+                android:background="@android:color/white"
+                android:padding="8dp"/>
+        </LinearLayout>
+
+        <!-- Category Tabs -->
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/tabAll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="All Notices"
+                    android:padding="10dp"
+                    android:background="@drawable/category_selected_bg"
+                    android:textColor="@color/black"/>
+
+                <Space android:layout_width="8dp" android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tabAcademic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Academic"
+                    android:padding="10dp"
+                    android:background="@drawable/category_unselected_bg"
+                    android:textColor="@color/black"/>
+
+                <Space android:layout_width="8dp" android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tabEvents"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Events"
+                    android:padding="10dp"
+                    android:background="@drawable/category_unselected_bg"
+                    android:textColor="@color/black"/>
+
+                <Space android:layout_width="8dp" android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tabGeneral"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="General"
+                    android:padding="10dp"
+                    android:background="@drawable/category_unselected_bg"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <!-- Recent Notices -->
+        <TextView
+            android:id="@+id/recentNoticesTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recent Notices"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:padding="10dp"/>
+
+        <!-- ScrollView for Notices -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:id="@+id/noticesContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp"/>
+        </ScrollView>
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="?android:attr/windowBackground"
+        app:itemIconTint="@color/black"
+        app:itemTextColor="@color/black"
+        app:menu="@menu/bottom_nav_menu"
+        app:itemBackground="@android:color/transparent" />
+
+</FrameLayout>
